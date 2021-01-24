@@ -6,7 +6,7 @@
 /**
 * @param {number[]} nums
 * @param {number} n
-* @return {number[]}
+* @return {number[]} returnedArr
 */
 const shuffle = function(nums, n) {
   const returnedArr = [];
