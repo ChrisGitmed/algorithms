@@ -4,4 +4,10 @@
  * including the year 100, the second - from the year
  * 101 up to and including the year 200, etc.
  *
+ * @param: {number} year
+ * @return: {number}
  */
+
+function centuryFromYear(year) {
+  return Math.ceil(year / 100);
+}
