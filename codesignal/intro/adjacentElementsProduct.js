@@ -3,7 +3,7 @@
  * that has the largest product and return that product.
  *
  * @param: { number[] } inputArray
- * @return { number } largestProduct
+ * @return: { number } largestProduct
  */
 function adjacentElementsProduct(inputArray) {
   let max = -Infinity;
