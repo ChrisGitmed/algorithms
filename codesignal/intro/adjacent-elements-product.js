@@ -5,6 +5,7 @@
  * @param: { number[] } inputArray
  * @return: { number } largestProduct
  */
+
 function adjacentElementsProduct(inputArray) {
   let max = -Infinity;
   for (let i = 0; i < inputArray.length - 1; i++) {
@@ -13,6 +14,7 @@ function adjacentElementsProduct(inputArray) {
   }
   return max;
 }
+
 /**
  * Create a variable (max) to hold the largest product
  * for loop to iterate over each number except for the last
@@ -20,3 +22,5 @@ function adjacentElementsProduct(inputArray) {
  *        if yes, max = previous expression
  * return max
  */
+
+ module.exports = adjacentElementsProduct;
