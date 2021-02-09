@@ -12,7 +12,7 @@ function commonCharacterCount(s1, s2) {
   for (let i = 0; i < s1.length; i++) {
     for (let x = 0; x < compareArray.length; x++) {
       if (s1[i] === compareArray[x]) {
-        compareArray[x] = '!'
+        compareArray[x] = '!';
         counter++;
         break;
       }
@@ -20,6 +20,7 @@ function commonCharacterCount(s1, s2) {
   }
   return counter;
 }
+
 /**
  *  Split the string into an array. (So it is mutable)
  *  initialize counter to zero
@@ -31,3 +32,5 @@ function commonCharacterCount(s1, s2) {
  *        break out of inner loop
  *  return counter;
  */
+
+module.exports = commonCharacterCount;
