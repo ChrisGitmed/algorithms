@@ -25,17 +25,20 @@ function kidsWithCandies(candies, extraCandies) {
   }
   return boolArray;
 }
- /**
-  * Create a max variable
-  * for loop through entire array
-  *     check if array[i] is greater than max
-  *         if yes, max = array[i]
-  *
-  * Create new array for booleans
-  * for loop through array again
-  *     check if array[i] PLUS extraCandies is greater than or equal to max.
-  *         if yes, push true to the array
-  *         if false: push false to the array.
-  *
-  * return the array
-  */
+
+/**
+ * Create a max variable
+ * for loop through entire array
+ *     check if array[i] is greater than max
+ *         if yes, max = array[i]
+ *
+ * Create new array for booleans
+ * for loop through array again
+ *     check if array[i] PLUS extraCandies is greater than or equal to max.
+ *         if yes, push true to the array
+ *         if false: push false to the array.
+ *
+ * return the array
+ */
+
+module.exports = kidsWithCandies;
