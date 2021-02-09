@@ -16,3 +16,5 @@ const shuffle = function(nums, n) {
   }
   return returnedArr;
 };
+
+module.exports = shuffle;
