@@ -26,13 +26,13 @@ function maximumWealth(accounts) {
   return max;
 }
 
-// create max variable
-// For loop over accounts
+// create max variable and set it to lowest possible number.
+// Iterate over accounts
 //    create variable for subarray total
-//    for loop over subarray components
-//        add each component to subarray total
-//    compare subarray total to max (if total > max)
-//          if yes: max = total
+//    for loop over subarray indexes
+//          add the value of each index to subarray total
+//    if the subarray total is greater than the max,
+//          assign the total to max
 // return max
 
 module.exports = maximumWealth;
