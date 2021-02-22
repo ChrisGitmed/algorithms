@@ -8,14 +8,14 @@
  * @param {number} num
  * @return {number}
  */
-var numberOfSteps = function (num) {
+function numberOfSteps(num) {
   let counter = 0;
   while (num) {
     counter++;
     num % 2 === 0 ? num = num / 2 : num -= 1;
   }
   return counter;
-};
+}
 
 /**
  * Initialize the counter for number of steps
@@ -26,3 +26,5 @@ var numberOfSteps = function (num) {
  *    else:
  *      assign num - 1 back into num
  */
+
+ module.exports = numberOfSteps
