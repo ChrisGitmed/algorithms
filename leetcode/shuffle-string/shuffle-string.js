@@ -12,7 +12,7 @@
  * @param {number[]} indices
  * @return {string}
  */
-var restoreString = function(s, indices) {
+function restoreString(s, indices) {
     const returnedArr = [];
     for (let i = 0; i < indices.length; i++) {
         returnedArr[indices[i]] = s[i];
@@ -24,3 +24,5 @@ var restoreString = function(s, indices) {
 // loop through ALL indices
 //      returnedArray[indices[i]] = s[i]
 // turn array into string and return it
+
+module.exports = restoreString;
