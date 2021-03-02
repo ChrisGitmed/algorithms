@@ -23,7 +23,7 @@
  * @param {number} medium
  * @param {number} small
  */
-const ParkingSystem = (big, medium, small) => {
+const ParkingSystem = function(big, medium, small) {
     this.bigSpots = big;
     this.mediumSpots = medium;
     this.smallSpots = small;
@@ -49,3 +49,5 @@ ParkingSystem.prototype.addCar = function(carType) {
  *      Switch statement for the carType
  *          decrement the s/m/l property, then check it's greater than -1 and return.
  */
+
+module.exports = ParkingSystem;
