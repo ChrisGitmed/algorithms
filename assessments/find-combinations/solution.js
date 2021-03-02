@@ -45,5 +45,13 @@ export function findCombinations(phoneNumber, word) {
     }
   }
   console.log(`preWordArray: ${preWordArray}, postWordArray: ${postWordArray}`);
+
+  // Create an array of every possible permutation.
+  const returnedArr = [];
+  //Loop through preword array first,
+  //    concatenate every possible string
+  //Add the word to EVERY string in the array
+  //Loop through postword array
+  //    concatenate EVERY possible string
 	return []
 }
