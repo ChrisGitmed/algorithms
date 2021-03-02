@@ -7,3 +7,9 @@ test('returns all combinations for the number "52283" and the text "cat"', () =>
   const actual = findCombinations("52283", "cat");
   expect(actual.sort()).toEqual(expectedResult.sort());
 });
+
+test('returns all combinations for the number "55228" and the text "cat"', () => {
+  const expectedResult = ["jjcat", "jkcat", "jlcat", "kjcat", "kkcat", "klcat", "ljcat", "lkcat", "llcat"];
+  const actual = findCombinations("55228", "cat");
+  expect(actual.sort()).toEqual(expectedResult.sort());
+});
