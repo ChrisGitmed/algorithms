@@ -19,7 +19,7 @@
  * @param {string} ruleValue
  * @return {number}
  */
-var countMatches = function(items, ruleKey, ruleValue) {
+const countMatches = (items, ruleKey, ruleValue) => {
     let count = 0;
     for (let i = 0; i < items.length; i++) {
         switch(ruleKey) {
@@ -55,3 +55,4 @@ var countMatches = function(items, ruleKey, ruleValue) {
  *              check third index
  *      return counter;
  */
+module.exports = countMatches;
