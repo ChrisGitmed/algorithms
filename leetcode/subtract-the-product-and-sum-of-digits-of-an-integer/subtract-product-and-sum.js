@@ -30,4 +30,4 @@ const subtractProductAndSum = (n) => {
  *      multiply the number with the product
  * return the product minus sum
  */
-export default subtractProductAndSum;
+module.exports = subtractProductAndSum;
