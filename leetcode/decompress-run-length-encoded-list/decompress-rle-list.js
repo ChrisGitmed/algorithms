@@ -33,3 +33,5 @@ const decompressRLElist = (nums) => {
 //      Loop nums[i] (frequency)
 //          push the value of nums[i + 1] to the array
 // return array
+
+module.exports = decompressRLElist;
