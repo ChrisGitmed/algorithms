@@ -42,3 +42,4 @@ const interpret = (command) => {
  *      else add a 'G' to the goalString
  * return the goalString
  */
+module.exports = interpret;
