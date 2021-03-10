@@ -1,5 +1,5 @@
 const { test, expect } = require('@jest/globals');
-const runningSum = require('./running-sum-1d-array');
+const runningSum = require('./running-sum');
 
 test('Expect output of runningSum([1, 2, 3, 4]) to equal [1, 3, 6, 10].', () => {
   expect(runningSum([1, 2, 3, 4])).toEqual([1, 3, 6, 10]);
