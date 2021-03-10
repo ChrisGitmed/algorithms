@@ -1,5 +1,5 @@
 const { test, expect } = require('@jest/globals');
-const shuffle = require('./shuffle-the-array');
+const shuffle = require('./shuffle');
 
 test('Return of shuffle([2, 5, 1, 3, 4, 7], 3) should equal [2, 3, 5, 4, 1, 7].', () => {
   expect(shuffle([2, 5, 1, 3, 4, 7], 3)).toEqual([2, 3, 5, 4, 1, 7]);
