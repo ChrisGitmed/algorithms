@@ -23,3 +23,5 @@
         return Number(arr.join(''))
     }
 };
+
+module.exports = maximum69Number;
