@@ -36,3 +36,5 @@
     }
     return returnedMatrix;
 };
+
+module.exports = flipAndInvertImage;
