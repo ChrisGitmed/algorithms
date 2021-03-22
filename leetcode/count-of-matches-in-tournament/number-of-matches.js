@@ -31,3 +31,5 @@ var numberOfMatches = function(n) {
     }
     return matches;
 };
+
+module.exports = numberOfMatches;
