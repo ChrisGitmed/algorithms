@@ -20,7 +20,7 @@
     if (newNum < Math.pow(-2, 31) || newNum > Math.pow(2, 31) - 1) {
         return 0;
     }
-    return newNum;
+    return Number(newNum);
 };
 
 module.exports = reverse;
