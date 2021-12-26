@@ -19,5 +19,3 @@ module.exports = numJewelsInStones = (jewels, stones) => {
   for (const stone of stones) if (jewels.includes(stone)) count++;
   return count;
 };
-
-module.exports = numJewelsInStones;
