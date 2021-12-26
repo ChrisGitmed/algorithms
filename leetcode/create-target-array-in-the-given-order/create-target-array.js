@@ -6,7 +6,7 @@
  * - Initially target array is empty.
  * 
  * - From left to right read nums[i] and index[i], 
- *   insert at index index[i] the value nums[i] in 
+ *   insert at index[i] the value nums[i] in 
  *   target array.
  * 
  * - Repeat the previous step until there are no 
@@ -22,18 +22,8 @@
  * @param {number[]} index
  * @return {number[]}
  */
-const createTargetArray = (nums, index) => {
+module.exports = createTargetArray = (nums, index) => {
     const targetArray = [];
-    for (let i = 0; i < nums.length; i++) {
-        targetArray.splice(index[i], 0, nums[i])
-    }
+    for (const idx in nums) targetArray.splice(index[idx], 0, nums[idx]);
     return targetArray;
 };
-
-/**
- * Initialize an empty target array
- * Loop through nums/index
- *      Splice the proper value into the target array
- * Return the target array
- */
-module.exports = createTargetArray;
