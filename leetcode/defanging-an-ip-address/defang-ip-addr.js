@@ -9,13 +9,4 @@
 * @return {string}
 */
 
-function defangIPaddr(address) {
-  return address.replace(/\./g, '[.]');
-}
-
-/**
- * NOTE: If the first argument is a string, only the first match will be
- * replaced. This is why you must use RegEx
- */
-
-module.exports = defangIPaddr;
+module.exports =  defangIPaddr = address => address.replace(/\./g, '[.]');

@@ -1,5 +1,5 @@
 const { test, expect } = require('@jest/globals');
-const defangIPaddr = require('./defanging-an-ip');
+const defangIPaddr = require('./defang-ip-addr');
 let input, output;
 
 test("Should replace every '.' with a '[.]' ", () => {
