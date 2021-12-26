@@ -14,26 +14,12 @@
  * @param {number[]} gain
  * @return {number}
  */
- var largestAltitude = function(gain) {
+module.exports = largestAltitude = gain => {
     let max = 0;
     let altitude = 0;
-    for (let i = 0; i < gain.length; i++) {
-        altitude += gain[i];
-        if (altitude > max) {
-            max = altitude;
-        }
-    }
+    for (const num of gain) {
+        altitude += num;
+        if (altitude > max) max = altitude;
+    };
     return max;
 };
-
-/**
- * Initialize variable for max
- * Initialize variable for altitude
- * Loop through entire gain array
- *      Add gain[i] to the altitude
- *      Check altitude against max, if higher:
- *          assign altitude to max
- * return max
- */
-
-module.exports = largestAltitude;
