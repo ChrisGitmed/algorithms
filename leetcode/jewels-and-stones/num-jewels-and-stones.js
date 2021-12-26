@@ -14,20 +14,10 @@
  * @return {number}
  */
 
-function numJewelsInStones(jewels, stones) {
+module.exports = numJewelsInStones = (jewels, stones) => {
   let count = 0;
-  for (let i = 0; i < stones.length; i++) {
-    if (jewels.includes(stones[i])) {
-      count++;
-    }
-  }
+  for (const stone of stones) if (jewels.includes(stone)) count++;
   return count;
-}
-
-// initialize count var
-// for loop through second string
-//   check if string1 includes string2[i]
-//     increment count
-// return
+};
 
 module.exports = numJewelsInStones;
