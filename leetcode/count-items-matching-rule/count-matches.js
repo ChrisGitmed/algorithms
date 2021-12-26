@@ -21,38 +21,19 @@
  */
 const countMatches = (items, ruleKey, ruleValue) => {
     let count = 0;
-    for (let i = 0; i < items.length; i++) {
+    for (const idx in items) {
         switch(ruleKey) {
             case 'type':
-                if (items[i][0] === ruleValue) {
-                    count++;
-                }
+                if (items[idx][0] === ruleValue) count++;
                 break;
             case 'color':
-                if (items[i][1] === ruleValue) {
-                    count++;
-                }
+                if (items[idx][1] === ruleValue) count++;
                 break;
             case 'name':
-                if (items[i][2] === ruleValue) {                                     
-                    count++;
-                }
-                break;
-        }
-    }
+                if (items[idx][2] === ruleValue) count++;
+        };
+    };
     return count;
 };
 
-/**
- * Initialize counter
- * Loop through all items
- *      check the value of ruleKey
- *          if 'type'
- *              check first index at items[i] for ruleValue
- *          if 'colo'
- *              check second index
- *          if 'name'
- *              check third index
- *      return counter;
- */
 module.exports = countMatches;
