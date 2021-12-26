@@ -23,31 +23,22 @@
  * @param {number} medium
  * @param {number} small
  */
-const ParkingSystem = function(big, medium, small) {
-    this.bigSpots = big;
-    this.mediumSpots = medium;
-    this.smallSpots = small;
+
+module.exports = class ParkingSystem {
+    constructor(big, medium, small) {
+        this.bigSpots = big;
+        this.mediumSpots = medium;
+        this.smallSports = small;
+    };
+
+    addCar(carType) {
+        switch(carType) {
+            case 1:
+                return --this.bigSpots >= 0 ? true: false; 
+            case 2: 
+                return --this.mediumSpots >= 0 ? true : false; 
+            case 3:
+                return --this.smallSpots >= 0 ? true : false; 
+        };
+    };
 };
-
-/** 
- * @param {number} carType
- * @return {boolean}
- */
-ParkingSystem.prototype.addCar = function(carType) {
-    switch(carType) {
-        case 1:
-            return --this.bigSpots >= 0 ? true: false; 
-        case 2: 
-            return --this.mediumSpots >= 0 ? true : false; 
-        case 3:
-            return --this.smallSpots >= 0 ? true : false; 
-    }
-};
-
-/**
- * In the addCar method, check for the car type:
- *      Switch statement for the carType
- *          decrement the s/m/l property, then check it's greater than -1 and return.
- */
-
-module.exports = ParkingSystem;
