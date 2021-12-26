@@ -17,24 +17,13 @@
  * @param {number[][]} image
  * @return {number[][]}
  */
- var flipAndInvertImage = function(image) {
+
+module.exports = flipAndInvertImage = image => {
     const returnedMatrix = [];
-    for (let i = 0; i < image.length * 2; i++) {
-        if (i < image.length) {
-            const subarray = [];
-            for (let x = image[i].length - 1; x >= 0; x--) {
-                subarray.push(image[i][x]);
-            }
-            returnedMatrix.push(subarray);
-        }
-        else {
-            const workingIndex = i - image.length;
-            for (let x = 0; x < returnedMatrix.length; x++) {
-                returnedMatrix[workingIndex][x] = returnedMatrix[workingIndex][x] === 1 ? 0 : 1
-            }
-        }
-    }
+    for (const subArr of image) {
+        const newArr = [];
+        for (const value of subArr) newArr.unshift(value === 1 ? 0 : 1);
+        returnedMatrix.push(newArr);
+    };
     return returnedMatrix;
 };
-
-module.exports = flipAndInvertImage;
