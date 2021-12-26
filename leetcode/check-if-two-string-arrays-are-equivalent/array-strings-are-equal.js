@@ -7,13 +7,10 @@
  */
 
 /**
- * @param {string[]} word1
- * @param {string[]} word2
+ * @param {string[]} firstWord
+ * @param {string[]} secondWord
  * @return {boolean}
  */
-const arrayStringsAreEqual = (word1, word2) => {
-    return word1.join('') === word2.join('');
-};
+const arrayStringsAreEqual = (firstWord, secondWord) => firstWord.join('') === secondWord.join('');
 
-// convert the arrays to strings, compare, and return the result
 module.exports = arrayStringsAreEqual;
