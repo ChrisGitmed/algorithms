@@ -26,17 +26,14 @@
 * @return {number[]}
 */
 
-function decode(encoded, first) {
+module.exports = decode = (encoded, first) => {
   encoded.unshift(first);
-  for (let i = 1; i < encoded.length; i++) {
-    encoded[i] = encoded[i] ^ encoded[i - 1];
-  }
+  for (const idx in encoded) encoded[idx] = encoded[idx] ^ encoded[idx - 1];
   return encoded;
-}
+};
 
 // Insert first into the first index of array
 // iterate over every element in the array except first
 //      reassign array[i] with array[i] ^ array[i - 1]
 // return the array
 
-module.exports = decode;
