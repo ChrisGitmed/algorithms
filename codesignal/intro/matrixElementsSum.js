@@ -10,26 +10,21 @@
  * are suitable for the CodeBots (ie: add up all the values that don't appear
  * below a 0).
  *
- * @param {number[][]} matrix
- * @return {number}
+ * @param { Number[][] } matrix
+ * @return { Number }
  */
-
-function matrixElementsSum(matrix) {
+const matrixElementsSum = matrix => {
   let sum = 0;
   const hauntedRooms = [];
 
   for (let i = 0; i < matrix.length; i++) {
     for (let x = 0; x < matrix[i].length; x++) {
-      for (let y = 0; y < hauntedRooms.length; y++) {
-        matrix[i][hauntedRooms[y]] = 0
-      }
-      sum += matrix[i][x]
-      if (matrix[i][x] === 0) {
-        hauntedRooms.push(x);
-      }
-    }
-  }
+      for (let y = 0; y < hauntedRooms.length; y++) matrix[i][hauntedRooms[y]] = 0;
+      sum += matrix[i][x];
+      if (matrix[i][x] === 0) hauntedRooms.push(x);
+    };
+  };
   return sum;
-}
+};
 
 module.exports = matrixElementsSum;

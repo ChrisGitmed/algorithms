@@ -1,5 +1,5 @@
 const { test, expect } = require('@jest/globals');
-const commonCharacterCount = require('./common-character-count');
+const commonCharacterCount = require('./commonCharacterCount');
 
 test(`Return of commonCharacterCount('aabcc', 'adcaa') should be 3.`, () => {
   expect(commonCharacterCount('aabcc', 'adcaa')).toBe(3);
