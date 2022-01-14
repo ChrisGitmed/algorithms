@@ -1,13 +1,10 @@
 /**
  *  Write a function that returns the sum of two numbers.
  *
- *  @param: {number} param1
- *  @param: {number} param2
- *  @return: {number}
+ *  @param: {Number} param1
+ *  @param: {Number} param2
+ *  @return: {Number}
  */
-
-function add(param1, param2) {
-  return param1 + param2;
-}
+const add = (a, b) => a + b;
 
 module.exports = add;
