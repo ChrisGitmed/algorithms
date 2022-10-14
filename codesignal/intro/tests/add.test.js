@@ -1,5 +1,5 @@
 const { test, expect } = require('@jest/globals');
-const add = require('./add');
+const add = require('../solutions/add');
 
 test('Adds 1 and 2 to equal 3.', () => {
   expect(add(1,2)).toBe(3);

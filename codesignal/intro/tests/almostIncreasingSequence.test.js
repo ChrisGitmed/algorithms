@@ -1,5 +1,5 @@
 const { test, expect} = require('@jest/globals');
-const almostIncreasingSequence = require('./almostIncreasingSequence');
+const almostIncreasingSequence = require('../solutions/almostIncreasingSequence');
 
 test('Expect output for [1, 3, 2, 1] should be false.', () => {
   expect(almostIncreasingSequence([1, 3, 2, 1])).toBe(false);
