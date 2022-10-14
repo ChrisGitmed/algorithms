@@ -1,5 +1,5 @@
 const { test, expect } = require('@jest/globals');
-const createTargetArray = require('./create-target-array');
+const createTargetArray = require('../solutions/create-target-array');
 
 test('Should create the target array.', () => {
     const nums = [0, 1, 2, 3, 4];
