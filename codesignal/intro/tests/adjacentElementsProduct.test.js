@@ -1,5 +1,5 @@
 const { test , expect } = require('@jest/globals');
-const adjacentElementsProduct = require('./adjacentElementsProduct');
+const adjacentElementsProduct = require('../solutions/adjacentElementsProduct');
 
 test('Output of adjacentElementsProduct([3, 6, -2, -5, 7, 3]) should be 21.', () => {
   expect(adjacentElementsProduct([3, 6, -2, -5, 7, 3])).toBe(21);

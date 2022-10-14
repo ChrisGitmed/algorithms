@@ -1,5 +1,5 @@
 const { test , expect } = require('@jest/globals');
-const centuryFromYear = require('./centuryFromYear');
+const centuryFromYear = require('../solutions/centuryFromYear');
 
 test('Expect return of centuryFromYear(1905) to be 20.', () => {
   expect(centuryFromYear(1905)).toBe(20);
