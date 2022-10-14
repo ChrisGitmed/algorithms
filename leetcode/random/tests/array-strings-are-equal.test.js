@@ -1,5 +1,5 @@
 const { test, expect } = require('@jest/globals');
-const arrayStringsAreEqual = require('./array-strings-are-equal');
+const arrayStringsAreEqual = require('../solutions/array-strings-are-equal');
 
 test('Should return true if the string arrays are equal.', () => {
     const word1 = ['ab', 'c'];

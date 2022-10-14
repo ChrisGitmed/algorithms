@@ -1,5 +1,5 @@
 const { test, expect } = require('@jest/globals');
-const countMatches = require('./count-matches');
+const countMatches = require('../solutions/count-matches');
 
 test('Should count the number of items matching the rule.', () => {
     const items = [

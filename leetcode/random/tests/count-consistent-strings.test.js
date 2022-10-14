@@ -1,5 +1,5 @@
 const { test, expect } = require('@jest/globals');
-const countConsistentStrings = require('./count-consistent-strings');
+const countConsistentStrings = require('../solutions/count-consistent-strings');
 
 test('Should return the number of consistent strings.', () => {
     const allowed = 'ab';

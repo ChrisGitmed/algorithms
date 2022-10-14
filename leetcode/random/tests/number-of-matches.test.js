@@ -1,5 +1,5 @@
 const { test, expect } = require('@jest/globals');
-const numberOfMatches = require('./number-of-matches');
+const numberOfMatches = require('../solutions/number-of-matches');
 
 test('Should return the number of matches played', () => {
     const input = 100;
