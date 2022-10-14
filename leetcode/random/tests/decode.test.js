@@ -1,5 +1,5 @@
 const { test, expect } = require('@jest/globals');
-const decode = require('./decode');
+const decode = require('../solutions/decode');
 
 test('Expect return of decode([1, 2, 3], 1) to equal [1, 0, 2, 1]', () => {
   expect(decode([1, 2, 3], 1)).toEqual([1, 0, 2, 1]);
