@@ -1,4 +1,3 @@
 ## algorithms
 
-A place to store solved algorithms.
-Also used to practice writing unit tests with Jest.
+A repo created to store alorithms and practice unit testing.
