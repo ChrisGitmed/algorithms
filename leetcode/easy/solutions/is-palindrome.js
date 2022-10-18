@@ -8,8 +8,6 @@
  * @param {number} x
  * @return {boolean}
  */
-const isPalindrome = function(x) {
-  return x.toString().split('').reverse().join('') === x.toString();
-};
+const isPalindrome = (x) => x.toString().split('').reverse().join('') === x.toString();
 
 module.exports = { isPalindrome };
