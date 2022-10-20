@@ -1,5 +1,5 @@
 const { test, expect } = require('@jest/globals');
-const sumOddLengthSubarrays = require('../solutions/sum-odd-length-subarrays');
+const { sumOddLengthSubarrays } = require('../solutions/sum-odd-length-subarrays');
 
 test('Should return the sum of all odd-length subarrays.', () => {
     const input = [1, 4, 2, 5, 3];

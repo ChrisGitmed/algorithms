@@ -1,5 +1,5 @@
 const { test, expect } = require('@jest/globals');
-const numJewelsInStones = require('../solutions/num-jewels-and-stones');
+const { numJewelsInStones } = require('../solutions/num-jewels-and-stones');
 
 test('Expect return of numJewelsInStones("aA", "aAAbbbb") to be 3.', () => {
   expect(numJewelsInStones('aA', 'aAAbbbb')).toBe(3);

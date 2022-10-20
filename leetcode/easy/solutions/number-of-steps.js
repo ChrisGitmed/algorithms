@@ -9,7 +9,7 @@
  */
 const numberOfSteps = (num) =>{
   let stepCounter = 0;
-  while (num !== 0) {
+  while (num) {
     num % 2 === 0 ? num /= 2 : num -= 1;
     stepCounter += 1;
   }

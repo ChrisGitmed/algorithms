@@ -11,30 +11,21 @@
  * Given a lower and upper number bound, output a list of 
  * every possible self dividing number, including the 
  * bounds if possible.
- */
-
-/**
+ * 
  * @param {number} left
  * @param {number} right
  * @return {number[]}
  */
-
 const selfDividingNumbers = (left, right) => {
-    const numArray = [];
-    for (let i = left; i <= right; i++) {
-        const numStr = i.toString();
-        for (let x = 0; x < numStr.length; x++) {
-            if (i % Number(numStr[x]) !== 0) {
-                break;
-            }
-            if (x === numStr.length - 1) {
-                if (!numStr.includes('0')) {
-                    numArray.push(Number(numStr))
-                }
-            }
-        }
+  const numArray = [];
+  for (let i = left; i <= right; i++) {
+    const numStr = i.toString();
+    for (let x = 0; x < numStr.length; x++) {
+      if (i % Number(numStr[x]) !== 0) break;
+      if (x === numStr.length - 1 && !numStr.includes('0')) numArray.push(Number(numStr));
     }
-    return numArray;
+  }
+  return numArray;
 };
 
-module.exports = selfDividingNumbers;
+module.exports = { selfDividingNumbers };

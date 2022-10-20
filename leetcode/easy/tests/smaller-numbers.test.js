@@ -1,5 +1,5 @@
 const { test, expect } = require('@jest/globals');
-const smallerNumbersThanCurrent = require('../solutions/smaller-numbers');
+const { smallerNumbersThanCurrent } = require('../solutions/smaller-numbers');
 
 test('Test 1 for smallerNumbersThanCurrent', () => {
   const input = [8, 1, 2, 2, 3];

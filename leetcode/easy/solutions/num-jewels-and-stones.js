@@ -6,16 +6,15 @@
  *
  * Letters are case sensitive, so "a" is considered a different type of stone
  * from "A".
- */
-
-/**
+ * 
  * @param {string} jewels
  * @param {string} stones
  * @return {number}
  */
-
-module.exports = numJewelsInStones = (jewels, stones) => {
+const numJewelsInStones = (jewels, stones) => {
   let count = 0;
   for (const stone of stones) if (jewels.includes(stone)) count++;
   return count;
 };
+
+module.exports = { numJewelsInStones };

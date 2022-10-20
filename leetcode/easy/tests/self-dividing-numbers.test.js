@@ -1,5 +1,5 @@
 const { test, expect } = require('@jest/globals');
-const selfDividingNumbers = require('../solutions/self-dividing-numbers');
+const { selfDividingNumbers } = require('../solutions/self-dividing-numbers');
 
 test('Should return all self-dividing numbers.', () => {
     const left = 1;
