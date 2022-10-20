@@ -10,24 +10,22 @@
  *
  * Return the original array arr. It can be proved that the answer exists and
  * is unique.
- */
-
-/**
+ *
  * Example:
  * Input: encoded = [1,2,3], first = 1
  * Output: [1,0,2,1]
  * Explanation: If arr = [1,0,2,1], then first = 1 and
  *              encoded = [1 XOR 0, 0 XOR 2, 2 XOR 1] = [1,2,3]
+ * 
+ * @param {number[]} encoded
+ * @param {number} first
+ * @return {number[]}
  */
 
-/**
-* @param {number[]} encoded
-* @param {number} first
-* @return {number[]}
-*/
-
-module.exports = decode = (encoded, first) => {
+const decode = (encoded, first) => {
   encoded.unshift(first);
   for (const idx in encoded) encoded[idx] = encoded[idx] ^ encoded[idx - 1];
   return encoded;
 };
+
+module.exports = { decode };
