@@ -4,9 +4,7 @@
  * characters in the string appear in the string allowed. 
  * 
  * Return the number of consistent strings in the array 'words'.
- */
-
-/**
+ * 
  * @param {string} allowed
  * @param {string[]} words
  * @return {number}
@@ -21,4 +19,4 @@
     return count;
 };
 
-module.exports = countConsistentStrings;
+module.exports = { countConsistentStrings };

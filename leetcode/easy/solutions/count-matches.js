@@ -36,4 +36,4 @@ const countMatches = (items, ruleKey, ruleValue) => {
     return count;
 };
 
-module.exports = countMatches;
+module.exports = { countMatches };

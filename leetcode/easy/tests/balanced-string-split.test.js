@@ -1,5 +1,5 @@
 const { test, expect } = require('@jest/globals');
-const balancedStringSplit = require('../solutions/balanced-string-split');
+const { balancedStringSplit } = require('../solutions/balanced-string-split');
 
 test('Should return the max amount of balanced strings.', () => {
     const s = 'RLRRLLRLRL';
