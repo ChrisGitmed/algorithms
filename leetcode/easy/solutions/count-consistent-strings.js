@@ -9,14 +9,14 @@
  * @param {string[]} words
  * @return {number}
  */
- const countConsistentStrings = (allowed, words) => {
-    let count = 0;
-    for (const word of words) {
-        let flag = true;
-        for (const letter of word) if (!allowed.includes(letter)) flag = false;
-        if (flag) count++;
-    };
-    return count;
+const countConsistentStrings = (allowed, words) => {
+  let count = 0;
+  for (const word of words) {
+    let flag = true;
+    for (const letter of word) if (!allowed.includes(letter)) flag = false;
+    if (flag) count++;
+  };
+  return count;
 };
 
 module.exports = { countConsistentStrings };
