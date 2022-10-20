@@ -13,32 +13,16 @@
  */
 const isValid = (s) => {
   const stack = [];
-  // Iterate over the string
+  const hash = {
+    '(': ')',
+    '{': '}',
+    '[': ']',
+  };
   for (const char of s) {
-    switch (char) {
-      case '(':
-      case '[':
-      case '{':
-        stack.push(char);
-        break;
-      case ')':
-        if (stack.slice(-1) === '(') {
-          stack.pop();
-        } else return false;
-        break;
-      case ']':
-        if (stack.slice(-1) == '[') {
-          stack.pop();
-        } else return false;
-        break;
-      case '}':
-        if (stack.slice(-1) === '{') {
-          stack.pop();
-        } else return false;
-        break;
-    }
+    if (char in hash) stack.push(char);
+    else if (hash[stack.pop()] !== char) return false;
   }
-  return true;
+  return !stack.length;
 };
 
 module.exports = { isValid };
