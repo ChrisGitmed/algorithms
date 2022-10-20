@@ -1,5 +1,5 @@
 const { test, expect } = require('@jest/globals');
-const reverse = require('../solutions/reverse');
+const { reverse } = require('../solutions/reverse');
 
 test('Should reverse the integer.', () => {
     const input = 123;
