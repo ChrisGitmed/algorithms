@@ -1,5 +1,5 @@
 const { test, expect } = require('@jest/globals');
-const flipAndInvertImage = require('../solutions/flip-and-invert-image');
+const { flipAndInvertImage } = require('../solutions/flip-and-invert-image');
 
 test('Should reverse and invert the image.', () => {
     const image = [[1,1,0],[1,0,1],[0,0,0]];

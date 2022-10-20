@@ -1,5 +1,5 @@
 const { test, expect } = require('@jest/globals');
-const maximum69Number = require('../solutions/maximum-69-number');
+const { maximum69Number } = require('../solutions/maximum-69-number');
 
 test('Should return the maximum number.', () => {
     const input = 9669;

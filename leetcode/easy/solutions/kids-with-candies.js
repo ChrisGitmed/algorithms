@@ -13,9 +13,6 @@
  * @param: {number} extraCandies
  * @return: {boolean[]}
  */
-module.exports = kidsWithCandies = (candies, extraCandies) => {
-  const max = Math.max(...candies);
+const kidsWithCandies = (candies, extraCandies) => candies.map((num) => !!(num + extraCandies >= Math.max(...candies)));
 
-  return candies.map(num => num + extraCandies >= max ? true : false);
-};
-
+module.exports = { kidsWithCandies };

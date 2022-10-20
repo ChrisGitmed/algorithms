@@ -8,18 +8,18 @@
  * i​​​​​​ and i + 1 for all (0 <= i < n). 
  * 
  * Return the highest altitude of a point.
- */
-
-/**
+ * 
  * @param {number[]} gain
  * @return {number}
  */
-module.exports = largestAltitude = gain => {
-    let max = 0;
-    let altitude = 0;
-    for (const num of gain) {
-        altitude += num;
-        if (altitude > max) max = altitude;
-    };
-    return max;
+const largestAltitude = gain => {
+  let max = 0;
+  let altitude = 0;
+  for (const num of gain) {
+    altitude += num;
+    if (altitude > max) max = altitude;
+  };
+  return max;
 };
+
+module.exports = { largestAltitude };

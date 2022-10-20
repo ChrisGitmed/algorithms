@@ -11,19 +11,19 @@
  * each 1 is replaced by 0.
  * 
  * For example, inverting [0,1,1] results in [1,0,0].
- */
-
-/**
+ * 
  * @param {number[][]} image
  * @return {number[][]}
  */
 
-module.exports = flipAndInvertImage = image => {
-    const returnedMatrix = [];
-    for (const subArr of image) {
-        const newArr = [];
-        for (const value of subArr) newArr.unshift(value === 1 ? 0 : 1);
-        returnedMatrix.push(newArr);
-    };
-    return returnedMatrix;
+const flipAndInvertImage = image => {
+  const returnedMatrix = [];
+  for (const subArr of image) {
+    const newArr = [];
+    for (const value of subArr) newArr.unshift(value === 1 ? 0 : 1);
+    returnedMatrix.push(newArr);
+  };
+  return returnedMatrix;
 };
+
+module.exports = { flipAndInvertImage };

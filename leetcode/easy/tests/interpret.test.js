@@ -1,5 +1,5 @@
 const { test, expect } = require('@jest/globals');
-const interpret = require('../solutions/interpret');
+const { interpret } = require('../solutions/interpret');
 
 test('Should interpret the string.', () => {
     const input = 'G()(al)';

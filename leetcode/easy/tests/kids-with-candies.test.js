@@ -1,5 +1,5 @@
 const { test, expect } = require('@jest/globals');
-const kidsWithCandies = require('../solutions/kids-with-candies');
+const { kidsWithCandies } = require('../solutions/kids-with-candies');
 
 test('Return of kidsWithCandies([2, 3, 5, 1, 3], 3) should be [true, true, true, false, true]', () => {
   expect(kidsWithCandies([2, 3, 5, 1, 3], 3)).toEqual([true, true, true, false, true]);
