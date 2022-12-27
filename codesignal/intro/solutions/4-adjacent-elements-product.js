@@ -1,9 +1,6 @@
 /**
- * Given an array of integers, find the pair of adjacent elements
- * that has the largest product and return that product.
- * 
- * @param { Number[] } inputArray 
- * @returns { Number }
+ * Given an array of integers, find the pair of adjacent elements that has the
+ * largest product and return that product.
  */
 const adjacentElementsProduct = inputArray => {
   let max = -Infinity;
@@ -14,4 +11,4 @@ const adjacentElementsProduct = inputArray => {
   return max;
 };
 
- module.exports = adjacentElementsProduct;
+ module.exports = { adjacentElementsProduct };

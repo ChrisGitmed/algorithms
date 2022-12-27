@@ -6,10 +6,7 @@
  * length 1. An n-interesting polygon is obtained by taking
  * the (n-1)-interesting polygon and appending 1-interesting
  * polygons to its rim, side by side.
- *
- * @param { Number } n
- * @return { Number }
  */
 const shapeArea = n => (n ** 2) + ((n - 1) ** 2);
 
-module.exports = shapeArea;
+module.exports = { shapeArea };

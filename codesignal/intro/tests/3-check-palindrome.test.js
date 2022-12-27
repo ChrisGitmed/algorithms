@@ -1,5 +1,5 @@
 const { test, expect } = require('@jest/globals');
-const checkPalindrome = require('../solutions/checkPalindrome');
+const { checkPalindrome } = require('../solutions/3-check-palindrome');
 
 test('Return of checkPalindrome("aabaa") should be true.', () => {
   expect(checkPalindrome('aabaa')).toBe(true);
