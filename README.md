@@ -1,3 +1,3 @@
 ## algorithms
 
-A repo created to store alorithms and practice unit testing.
+A repo created to store alorithm solutions from places like leetcode and codesignal.
