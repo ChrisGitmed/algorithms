@@ -1,5 +1,5 @@
 const { test, expect} = require('@jest/globals');
-const { solution } = require('../solutions/arrayChange');
+const { solution } = require('../solutions/17-array-change');
 
 test('Should return the minimal number of moves required to obtain a strictly increasing sequence from the input.', () => {
   expect(solution([1, 1, 1])).toBe(3);

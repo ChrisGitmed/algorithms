@@ -1,5 +1,5 @@
 const { test, expect} = require('@jest/globals');
-const { solution } = require('../solutions/palindromeRearranging');
+const { solution } = require('../solutions/18-palindrome-rearranging');
 
 test('Should tell if a given string can be rearranged to a palindrome', () => {
   expect(solution('aabb')).toBe(true);

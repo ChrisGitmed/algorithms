@@ -21,4 +21,4 @@ const commonCharacterCount = (s1, s2) => {
   return counter;
 };
 
-module.exports = commonCharacterCount;
+module.exports = { commonCharacterCount };

@@ -1,5 +1,5 @@
 const { test, expect } = require('@jest/globals');
-const shapeArea = require('../solutions/shapeArea');
+const { shapeArea } = require('../solutions/5-shape-area');
 
 test('Expect shapeArea(1) to be 1.', () => {
   expect(shapeArea(1)).toBe(1);

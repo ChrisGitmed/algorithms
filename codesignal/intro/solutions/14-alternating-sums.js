@@ -11,10 +11,8 @@
  * 
  * For a = [50, 60, 60, 45, 70], the output should be solution(a) = [180, 105].
  * 
- * @param { Number[] } a 
- * @returns { Number[] }
  */
-const solution = a => {
+const solution = (a) => {
   const results = [0, 0];
   a.forEach( ( (item, idx) => idx % 2 === 0 ? results[0] += item : results[1] += item) );
   return results;

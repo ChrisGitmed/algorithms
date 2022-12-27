@@ -9,9 +9,6 @@
  *                      "*abc*",
  *                      "*ded*",
  *                      "*****"]
- * 
- * @param { Array[] } picture 
- * @returns { Array[] }
  */
 const solution = picture => {
   const width = picture[0].length + 2;
