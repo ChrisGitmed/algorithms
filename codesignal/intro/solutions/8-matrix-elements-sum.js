@@ -27,4 +27,4 @@ const matrixElementsSum = matrix => {
   return sum;
 };
 
-module.exports = matrixElementsSum;
+module.exports = { matrixElementsSum };
