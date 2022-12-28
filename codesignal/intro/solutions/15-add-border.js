@@ -10,12 +10,14 @@
  *                      "*ded*",
  *                      "*****"]
  */
-const solution = picture => {
+const solution = (picture) => {
   const width = picture[0].length + 2;
 
   return [
-      '*'.repeat(width),
-      ...picture.map( row => `*${row}*`),
-      '*'.repeat(width)
+    '*'.repeat(width),
+    ...picture.map((row) => `*${row}*`),
+    '*'.repeat(width)
   ];
 };
+
+module.exports = { solution };
