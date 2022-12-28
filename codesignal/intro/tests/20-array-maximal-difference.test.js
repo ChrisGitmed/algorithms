@@ -1,5 +1,5 @@
 const { test, expect} = require('@jest/globals');
-const { solution } = require('../solutions/solutions/20-array-maximal-difference.js');
+const { solution } = require('../solutions/20-array-maximal-difference.js');
 
 test('Should return the maximal absolute difference between two adjacent elements', () => {
   const input = [2, 4, 1, 0];
