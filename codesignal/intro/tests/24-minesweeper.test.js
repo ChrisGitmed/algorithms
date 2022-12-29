@@ -12,7 +12,7 @@ test('Should setup a game of minesweeper.', () => {
     [2,1,1], 
     [1,1,1]
   ];
-  expect(solution(input)).toBe(result);
+  expect(solution(input)).toEqual(result);
 });
 
 test('Should setup a game of minesweeper.', () => {
@@ -24,7 +24,7 @@ test('Should setup a game of minesweeper.', () => {
     [0,0,0], 
     [0,0,0]
   ];
-  expect(solution(input)).toBe(result);
+  expect(solution(input)).toEqual(result);
 });
 
 test('Should setup a game of minesweeper.', () => {
@@ -38,5 +38,5 @@ test('Should setup a game of minesweeper.', () => {
     [3,4,3,3], 
     [1,2,3,1]
   ];
-  expect(solution(input)).toBe(result);
+  expect(solution(input)).toEqual(result);
 });
