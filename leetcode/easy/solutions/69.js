@@ -10,7 +10,7 @@
  */
 const solution = (x) => {
   let square = 0;
-  while(true) {
+  while (true) {
     if (square * square > x) return square - 1;
     square++;
   }
