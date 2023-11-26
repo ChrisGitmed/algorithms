@@ -1,3 +1,3 @@
 ## algorithms
 
-A repo created to store alorithm solutions from places like leetcode and codesignal.
+A repo created to store algorithm solutions from places like leetcode and codesignal.
